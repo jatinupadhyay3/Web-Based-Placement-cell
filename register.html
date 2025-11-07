@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Register — Placement Cell</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="register">
+  <div class="container">
+    <header class="navbar">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="logo">
+        <h1>Placement Cell</h1>
+      </div>
+      <div class="nav-links">
+        <button id="nav-home" class="btn" onclick="goToHome()">Home</button>
+        <button id="nav-login" class="btn" onclick="goToLogin()">Login</button>
+        <div id="nav-user" class="small"></div>
+      </div>
+    </header>
+
+    <section class="card form-card" style="margin-top:18px">
+      <h2 style="margin-top:0">Create an account</h2>
+      <form id="reg-form">
+        <div style="margin-bottom:10px">
+          <label class="small">I am a</label>
+          <div style="display:flex;gap:10px">
+            <label><input type="radio" name="role" value="Student" checked> Student</label>
+            <label><input type="radio" name="role" value="Company"> Company</label>
+          </div>
+        </div>
+        <div style="margin-bottom:10px"><label class="small">Name</label><input id="reg-name" class="input" required>
+        </div>
+        <div style="margin-bottom:10px"><label class="small">Email</label><input id="reg-email" class="input"
+            type="email" required></div>
+        <div style="margin-bottom:10px"><label class="small">Password</label><input id="reg-password" class="input"
+            type="password" required></div>
+
+        <div style="margin-bottom:10px"><label class="small">Branch (students)</label><input id="reg-branch"
+            class="input"></div>
+        <div style="margin-bottom:10px"><label class="small">Year (students)</label><input id="reg-year" class="input">
+        </div>
+        <div style="margin-bottom:10px"><label class="small">Skills</label><input id="reg-skills" class="input"></div>
+
+        <div style="display:flex;gap:10px;justify-content:flex-end"><button class="btn btn-primary"
+            type="submit">Register</button></div>
+      </form>
+    </section>
+
+    <footer class="footer">&copy; Placement Cell — Frontend Demo</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

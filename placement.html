@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Placements — Placement Cell</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="placement">
+  <div class="container">
+    <header class="navbar">
+      <div class="brand"><img src="assets/logo.svg" alt="logo">
+        <h1>Placement Cell</h1>
+      </div>
+      <div class="nav-links">
+        <button id="nav-home" class="btn" onclick="goToHome()">Home</button>
+        <button id="nav-login" class="btn" onclick="goToLogin()">Login</button>
+        <button id="nav-register" class="btn" onclick="goToRegister()">Register</button>
+        <button id="nav-logout" class="btn" style="display:none">Logout</button>
+        <div id="nav-user" class="small"></div>
+      </div>
+    </header>
+
+    <section class="card" style="margin-top:18px">
+      <h2 style="margin:0 0 8px 0">Available Jobs & Internships</h2>
+      <div class="small">Browse and apply to roles. This is a frontend-only demo — applications stored in your browser.
+      </div>
+      <div id="jobs-grid" class="jobs-grid" style="margin-top:12px"></div>
+    </section>
+
+    <footer class="footer">&copy; Placement Cell — Frontend Demo</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

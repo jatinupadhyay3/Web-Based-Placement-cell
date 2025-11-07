@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Placement Cell — Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="home">
+  <div class="container">
+    <header class="navbar">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="logo">
+        <h1>Placement Cell</h1>
+      </div>
+      <div class="nav-links">
+        <button id="nav-home" class="btn">Home</button>
+        <button id="nav-placement" class="btn" onclick="goToPlacement()">Placements</button>
+        <button id="nav-login" class="btn">Login</button>
+        <button id="nav-register" class="btn">Register</button>
+        <div id="nav-user" class="small"></div>
+      </div>
+    </header>
+
+    <section class="hero card" style="margin-top:18px">
+      <div>
+        <h2 class="title">Find internships & jobs — faster.</h2>
+        <p class="lead">A modern portal to connect students with companies. Browse roles, apply instantly, and manage
+          placements — frontend-only demo.</p>
+        <div class="search">
+          <input id="home-search" class="input" placeholder="Search job title, skill or company">
+          <button class="btn btn-primary" onclick="goToPlacement()">Explore</button>
+        </div>
+
+        <div style="margin-top:18px">
+          <h3 style="margin:0 0 8px 0">Latest Jobs</h3>
+          <div id="home-jobs"></div>
+        </div>
+      </div>
+      <div>
+        <img src="assets/hero.svg" style="width:100%;border-radius:12px">
+      </div>
+    </section>
+
+    <section style="margin-top:18px" class="card">
+      <h3 style="margin:0 0 10px 0">About</h3>
+      <p class="small">This is a trendy, modern front-end only placement portal built with HTML, CSS, and JavaScript. It
+        uses localStorage to simulate backend data for students, companies, jobs, and applications.</p>
+    </section>
+
+    <footer class="footer">
+      &copy; Placement Cell — Frontend Demo
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

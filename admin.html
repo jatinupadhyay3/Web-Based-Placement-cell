@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin — Placement Cell</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="admin">
+  <div class="container">
+    <header class="navbar">
+      <div class="brand"><img src="assets/logo.svg" alt="logo">
+        <h1>Placement Cell</h1>
+      </div>
+      <div class="nav-links">
+        <button id="nav-home" class="btn" onclick="goToHome()">Home</button>
+        <button id="nav-logout" class="btn" onclick="clearCurrentUser()">Logout</button>
+        <div id="nav-user" class="small"></div>
+      </div>
+    </header>
+
+    <section style="margin-top:18px" class="card">
+      <h2 style="margin:0 0 8px 0">Admin Dashboard</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px">
+        <div class="card">
+          <h3 style="margin:0 0 8px 0">Students</h3>
+          <div id="admin-students"></div>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px 0">Companies</h3>
+          <div id="admin-companies"></div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:12px">
+        <h3 style="margin:0 0 8px 0">Jobs</h3>
+        <div id="admin-jobs"></div>
+      </div>
+    </section>
+
+    <footer class="footer">&copy; Placement Cell — Frontend Demo</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
